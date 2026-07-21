@@ -1,315 +1,1171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ninja's Barbershop | Barbearia Premium em Tietê SP</title>
-<meta name="description" content="Ninja's Barbershop - Barbearia premium em Tietê, SP. Cortes clássicos e modernos, barba e atendimento exclusivo embaixo do Banco Sicoob. Agende agora!" />
-<meta property="og:title" content="Ninja's Barbershop | Barbearia Premium em Tietê SP" />
-<meta property="og:description" content="Cortes de cabelo masculinos, barba e acabamento com atendimento de excelência. Agende seu horário pelo WhatsApp." />
-<meta property="og:type" content="website" />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#0B0B0B;color:#fff;font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
-a{text-decoration:none;transition:color 0.2s}
-a:hover{color:#C9A24A}
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:#0B0B0B}
-::-webkit-scrollbar-thumb{background:#2A2A2A;border-radius:3px}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,162,74,0.5)}70%{box-shadow:0 0 0 14px rgba(201,162,74,0)}}
-.btn-active-tactile{transition:all 0.2s ease !important}
-.btn-active-tactile:active{transform:scale(0.97) !important}
-.nav-link:hover{color:#fff !important}
-.mobile-link:hover{color:#C9A24A !important}
-@media(min-width:768px){#nav-desktop-links{display:flex !important}#hamburger-btn{display:none !important}}
-@media(max-width:767px){#nav-desktop-links{display:none !important}#hamburger-btn{display:flex !important}}
-.service-card{transition:all 0.2s}
-.service-card:hover{border-color:#C9A24A !important;background:#161616 !important}
-.photo-item{transition:border-color 0.3s}
-.photo-item:hover{border-color:#C9A24A !important}
-.photo-item img{transition:transform 0.4s ease}
-.photo-item:hover img{transform:scale(1.05)}
-.lightbox-close:hover{color:#C9A24A !important}
-.modal-item{transition:background 0.15s}
-.modal-item:hover{background:#1E1E1E !important}
-#wa-float{transition:transform 0.2s,opacity 0.3s;display:none}
-#wa-float.visible{display:flex}
-#wa-float:hover{transform:scale(1.12)}
-#cta-btn:hover{background:#1a1a1a !important;transform:translateY(-2px)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ninja's Barbershop | Barbearia Premium em Tietê SP</title>
+  <meta name="description"
+    content="Ninja's Barbershop - Barbearia premium em Tietê, SP. Cortes clássicos e modernos, barba e atendimento exclusivo embaixo do Banco Sicoob. Agende agora!" />
+  <meta property="og:title" content="Ninja's Barbershop | Barbearia Premium em Tietê SP" />
+  <meta property="og:description"
+    content="Cortes de cabelo masculinos, barba e acabamento com atendimento de excelência. Agende seu horário pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden
+    }
+
+    body {
+      background: #0B0B0B;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth
+    }
+
+    a {
+      text-decoration: none;
+      transition: color 0.2s
+    }
+
+    a:hover {
+      color: #C9A24A
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0B0B0B
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2A2A2A;
+      border-radius: 3px
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes waPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(201, 162, 74, 0.5)
+      }
+
+      70% {
+        box-shadow: 0 0 0 14px rgba(201, 162, 74, 0)
+      }
+    }
+
+    .btn-active-tactile {
+      transition: all 0.2s ease !important
+    }
+
+    .btn-active-tactile:active {
+      transform: scale(0.97) !important
+    }
+
+    .nav-link:hover {
+      color: #fff !important
+    }
+
+    .mobile-link:hover {
+      color: #C9A24A !important
+    }
+
+    @media(min-width:768px) {
+      #nav-desktop-links {
+        display: flex !important;
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+      }
+
+      #hamburger-btn {
+        display: none !important
+      }
+    }
+
+    .nav-icon {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-link:hover .nav-icon,
+    .mobile-link:hover .nav-icon {
+      transform: scale(1.15);
+    }
+
+    @media(max-width:767px) {
+      #nav-desktop-links {
+        display: none !important
+      }
+
+      #hamburger-btn {
+        display: flex !important
+      }
+
+      .diferenciais-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      #schedule-modal {
+        padding: 12px !important;
+        align-items: flex-end !important;
+      }
+
+      #modal-inner {
+        max-height: calc(100vh - 24px) !important;
+        max-height: calc(100svh - 24px) !important;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+      }
+    }
+
+    .nav-cta-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #C9A24A;
+      color: #0B0B0B;
+      padding: 10px 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .nav-cta-btn:hover {
+      background: #e5b95c;
+    }
+
+    @media(min-width:768px) {
+      .nav-cta-btn {
+        display: inline-flex !important;
+      }
+    }
+
+    .service-card {
+      transition: all 0.2s
+    }
+
+    .service-card:hover {
+      border-color: #C9A24A !important;
+      background: #161616 !important
+    }
+
+    .photo-item {
+      transition: border-color 0.3s
+    }
+
+    .photo-item:hover {
+      border-color: #C9A24A !important
+    }
+
+    .photo-item img {
+      transition: transform 0.4s ease
+    }
+
+    .photo-item:hover img {
+      transform: scale(1.05)
+    }
+
+    .lightbox-close:hover {
+      color: #C9A24A !important
+    }
+
+    .modal-item {
+      transition: background 0.15s
+    }
+
+    .modal-item:hover {
+      background: #1E1E1E !important
+    }
+
+    #wa-float {
+      transition: transform 0.2s, opacity 0.3s;
+      display: none
+    }
+
+    #wa-float.visible {
+      display: flex
+    }
+
+    #wa-float:hover {
+      transform: scale(1.12)
+    }
+
+    #cta-btn:hover {
+      background: #1a1a1a !important;
+      transform: translateY(-2px)
+    }
+
+    .trabalhos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .localizacao-map {
+      display: none;
+    }
+
+    @media(min-width:992px) {
+      .trabalhos-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        max-width: 1200px !important;
+      }
+
+      .diferenciais-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1.2fr !important;
+        gap: 60px !important;
+        align-items: center !important;
+        width: 100% !important;
+      }
+
+      .diferenciais-info {
+        margin-bottom: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .diferenciais-grid {
+        max-width: 100% !important;
+      }
+
+      .localizacao-container {
+        max-width: 1200px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1.2fr !important;
+        gap: 60px !important;
+        align-items: center !important;
+      }
+
+      .localizacao-map {
+        display: block !important;
+      }
+
+      #diferenciais {
+        min-height: 720px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 80px 24px !important;
+      }
+    }
+
+    .diferencial-card {
+      height: 52px;
+      padding: 0 24px;
+      background: rgba(17, 17, 17, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .diferencial-card:hover {
+      border-color: #C9A24A;
+      background: rgba(22, 22, 22, 0.9);
+      transform: translateY(-2px);
+    }
+
+    .diferencial-icon {
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .diferencial-card:hover .diferencial-icon {
+      transform: rotate(15deg) scale(1.1);
+    }
+
+    .hero-video {
+      position: absolute;
+      top: -48px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 48px);
+      object-fit: cover;
+      object-position: center;
+      display: block
+    }
+
+    @media(min-width:768px) {
+      .hero-video {
+        top: -48px !important;
+        height: calc(100% + 48px) !important;
+        object-position: center 20% !important;
+      }
+    }
+
+    section {
+      scroll-margin-top: 72px
+    }
+
+    .localizacao-map iframe {
+      pointer-events: none
+    }
+
+    .localizacao-map:hover iframe {
+      pointer-events: auto
+    }
+  </style>
 </head>
+
 <body>
 
-<nav style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(11,11,11,0.97);border-bottom:1px solid #1E1E1E">
-  <div style="max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px">
-    <a href="#hero" style="display:flex;align-items:center"><img src="uploads/logo.png" alt="Ninja's Barbershop" style="height:30px;width:auto;display:block" /></a>
-    <div id="nav-desktop-links" style="gap:36px;align-items:center">
-      <a href="#servicos" class="nav-link" style="color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">Serviços</a>
-      <a href="#diferenciais" class="nav-link" style="color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">Diferenciais</a>
-      <a href="#localizacao" class="nav-link" style="color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">Localização</a>
+  <nav
+    style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(11,11,11,0.97);border-bottom:1px solid #1E1E1E">
+    <div
+      style="max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px;position:relative">
+      <a href="#hero" style="display:flex;align-items:center"><img src="uploads/logo.png" alt="Ninja's Barbershop"
+          style="height:30px;width:auto;display:block" /></a>
+      <div id="nav-desktop-links" style="gap:36px;align-items:center">
+        <a href="#servicos" class="nav-link"
+          style="display:inline-flex;align-items:center;gap:8px;color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">
+          <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="9.8" y1="8.2" x2="21" y2="19.4"/><line x1="9.8" y1="15.8" x2="21" y2="4.6"/></svg>
+          Serviços
+        </a>
+        <a href="#diferenciais" class="nav-link"
+          style="display:inline-flex;align-items:center;gap:8px;color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">
+          <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+          Diferenciais
+        </a>
+        <a href="#localizacao" class="nav-link"
+          style="display:inline-flex;align-items:center;gap:8px;color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">
+          <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Localização
+        </a>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <button onclick="openModal()" class="nav-cta-btn btn-active-tactile">
+          <svg width="14" height="14" viewBox="0 0 448 512" fill="#0B0B0B"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          Agendar
+        </button>
+        <button id="hamburger-btn" onclick="toggleMenu()"
+          style="flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;margin-right:-6px">
+          <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
+          <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
+          <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
+        </button>
+      </div>
     </div>
-    <div style="display:flex;align-items:center;gap:14px">
-      <button id="hamburger-btn" onclick="toggleMenu()" style="flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;margin-right:-6px">
-        <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
-        <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
-        <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
-      </button>
+    <div id="mobile-menu"
+      style="display:none;flex-direction:column;background:#0B0B0B;border-top:1px solid #1E1E1E;padding:8px 32px 24px">
+      <a href="#servicos" onclick="closeMenu()" class="mobile-link"
+        style="display:flex;align-items:center;gap:10px;color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0;border-bottom:1px solid #1A1A1A">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="9.8" y1="8.2" x2="21" y2="19.4"/><line x1="9.8" y1="15.8" x2="21" y2="4.6"/></svg>
+        Serviços
+      </a>
+      <a href="#diferenciais" onclick="closeMenu()" class="mobile-link"
+        style="display:flex;align-items:center;gap:10px;color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0;border-bottom:1px solid #1A1A1A">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+        Diferenciais
+      </a>
+      <a href="#localizacao" onclick="closeMenu()" class="mobile-link"
+        style="display:flex;align-items:center;gap:10px;color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Localização
+      </a>
     </div>
-  </div>
-  <div id="mobile-menu" style="display:none;flex-direction:column;background:#0B0B0B;border-top:1px solid #1E1E1E;padding:8px 32px 24px">
-    <a href="#servicos" onclick="closeMenu()" class="mobile-link" style="color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0;border-bottom:1px solid #1A1A1A">Serviços</a>
-    <a href="#diferenciais" onclick="closeMenu()" class="mobile-link" style="color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0;border-bottom:1px solid #1A1A1A">Diferenciais</a>
-    <a href="#localizacao" onclick="closeMenu()" class="mobile-link" style="color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0">Localização</a>
-  </div>
-</nav>
+  </nav>
 
-<section id="hero" style="position:relative;width:100%;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0B0B0B url('uploads/parede_recepcao.jpg') center/cover no-repeat">
-  <video autoplay muted loop playsinline style="position:absolute;top:-48px;left:0;width:100%;height:calc(100% + 48px);object-fit:cover;object-position:center;display:block">
-    <source src="uploads/video_hero-dd58b79c.mp4" type="video/mp4" />
-  </video>
-  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(11,11,11,0.2) 0%,rgba(11,11,11,0.6) 40%,rgba(11,11,11,1) 95%)"></div>
-  <div style="position:relative;z-index:1;text-align:center;padding:0 24px;max-width:840px;animation:fadeInUp 1s ease both">
-    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(30px,5.5vw,62px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:20px;text-shadow:0 2px 24px rgba(0,0,0,0.6)">Barbearia em Tietê para quem leva o estilo a sério</h1>
-    <p style="font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,0.75);margin-bottom:44px;font-weight:300;letter-spacing:0.3px">Cortes masculinos, barba e acabamento com atendimento profissional na Ninjas Barbershop.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px">
-      <button onclick="openModal()" class="btn-active-tactile" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#C9A24A;color:#0B0B0B;padding:16px 24px;font-size:13px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;border:none;cursor:pointer;flex:1 1 200px;max-width:300px;transition:background 0.2s">
-        <svg width="18" height="18" viewBox="0 0 448 512" fill="#0B0B0B"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-        Agendar pelo WhatsApp
-      </button>
-      <a href="#servicos" class="btn-active-tactile" style="display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;font-size:13px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);flex:1 1 200px;max-width:300px;transition:all 0.2s">Ver serviços</a>
+  <section id="hero"
+    style="position:relative;width:100%;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0B0B0B url('uploads/parede_recepcao.jpg') center/cover no-repeat">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="uploads/video_hero-dd58b79c.mp4" type="video/mp4" />
+    </video>
+    <div
+      style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(11,11,11,0.2) 0%,rgba(11,11,11,0.6) 40%,rgba(11,11,11,1) 95%)">
     </div>
-    <p style="font-size:12px;color:rgba(255,255,255,0.45);letter-spacing:0.5px">
-      <svg width="11" height="11" viewBox="0 0 24 24" fill="#C9A24A" style="display:inline;vertical-align:middle;margin-right:6px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      Rua Lara Campos, 740 – Loja 4, Tietê, SP
-    </p>
-  </div>
-  <div style="position:absolute;bottom:48px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeIn 2s ease 1s both">
-    <span style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.3)">Scroll</span>
-    <div style="width:1px;height:40px;background:linear-gradient(to bottom,rgba(201,162,74,0.8),transparent)"></div>
-  </div>
-</section>
+    <div
+      style="position:relative;z-index:1;text-align:center;padding:0 24px;max-width:840px;animation:fadeInUp 1s ease both">
+      <h1
+        style="font-family:'Playfair Display',serif;font-size:clamp(30px,5.5vw,62px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:20px;text-shadow:0 2px 24px rgba(0,0,0,0.6)">
+        Barbearia em Tietê para quem leva o estilo a sério</h1>
+      <p
+        style="font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,0.75);margin-bottom:44px;font-weight:300;letter-spacing:0.3px">
+        Cortes masculinos, barba e acabamento com atendimento profissional na Ninjas Barbershop.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px">
+        <button onclick="openModal()" class="btn-active-tactile"
+          style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#C9A24A;color:#0B0B0B;padding:16px 24px;font-size:13px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;border:none;cursor:pointer;flex:1 1 200px;max-width:300px;transition:background 0.2s">
+          <svg width="18" height="18" viewBox="0 0 448 512" fill="#0B0B0B">
+            <path
+              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+          </svg>
+          Agendar pelo WhatsApp
+        </button>
+        <a href="#servicos" class="btn-active-tactile"
+          style="display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;font-size:13px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);flex:1 1 200px;max-width:300px;transition:all 0.2s">Ver
+          serviços</a>
+      </div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.45);letter-spacing:0.5px">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="#C9A24A"
+          style="display:inline;vertical-align:middle;margin-right:6px">
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+        </svg>
+        Rua Lara Campos, 740 – Loja 4, Tietê, SP
+      </p>
+    </div>
+    <div
+      style="position:absolute;bottom:48px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeIn 2s ease 1s both">
+      <span
+        style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.3)">Scroll</span>
+      <div style="width:1px;height:40px;background:linear-gradient(to bottom,rgba(201,162,74,0.8),transparent)"></div>
+    </div>
+  </section>
 
-<section id="trabalhos" style="background:#0E0E0E;padding:60px 24px;border-bottom:1px solid #1A1A1A">
-  <div style="max-width:1200px;margin:0 auto">
-    <div style="margin-bottom:48px;text-align:center">
-      <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:12px">
-        <div style="width:36px;height:1px;background:#C9A24A"></div>
-        <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Portfólio</span>
-        <div style="width:36px;height:1px;background:#C9A24A"></div>
+  <section id="trabalhos" style="background:#0E0E0E;padding:60px 24px;border-bottom:1px solid #1A1A1A">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="margin-bottom:48px;text-align:center">
+        <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:12px">
+          <div style="width:36px;height:1px;background:#C9A24A"></div>
+          <span
+            style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Portfólio</span>
+          <div style="width:36px;height:1px;background:#C9A24A"></div>
+        </div>
+        <h2
+          style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:12px">
+          Serviços Feitos</h2>
+        <p style="color:#B8B8B8;font-size:15px;max-width:540px;margin:0 auto">Confira o resultado do nosso trabalho e a
+          satisfação de nossos clientes. Clique para ampliar.</p>
       </div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:12px">Serviços Feitos</h2>
-      <p style="color:#B8B8B8;font-size:15px;max-width:540px;margin:0 auto">Confira o resultado do nosso trabalho e a satisfação de nossos clientes. Clique para ampliar.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:800px;margin:0 auto">
-      <div class="photo-item" onclick="openLightbox(this)" style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-        <img src="uploads/cliente01.jpg" alt="Serviço Feito" style="width:100%;height:100%;object-fit:cover;display:block" />
-      </div>
-      <div class="photo-item" onclick="openLightbox(this)" style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-        <img src="uploads/cliente02.jpg" alt="Serviço Feito" style="width:100%;height:100%;object-fit:cover;display:block" />
-      </div>
-      <div class="photo-item" onclick="openLightbox(this)" style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-        <img src="uploads/cliente03.jpg" alt="Serviço Feito" style="width:100%;height:100%;object-fit:cover;display:block" />
-      </div>
-      <div class="photo-item" onclick="openLightbox(this)" style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-        <img src="uploads/cliente04.jpg" alt="Serviço Feito" style="width:100%;height:100%;object-fit:cover;display:block" />
-      </div>
-    </div>
-  </div>
-  <div id="photo-lightbox" onclick="closeLightbox()" style="position:fixed;inset:0;background:rgba(11,11,11,0.95);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;z-index:10000;cursor:zoom-out;opacity:0;transition:opacity 0.25s ease-out">
-    <button class="lightbox-close" onclick="event.stopPropagation();closeLightbox()" style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;line-height:1;width:48px;height:48px;display:flex;align-items:center;justify-content:center;transition:color 0.2s">&times;</button>
-    <img id="lightbox-img" src="" alt="Ampliado" style="max-width:90%;max-height:90%;object-fit:contain;border:1px solid #1E1E1E;box-shadow:0 10px 40px rgba(0,0,0,0.8);transform:scale(0.95);transition:transform 0.25s ease-out" />
-  </div>
-</section>
-
-<section id="servicos" style="background:#0B0B0B;padding:60px 24px 64px">
-  <div style="max-width:1200px;margin:0 auto">
-    <div style="margin-bottom:56px">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
-        <div style="width:36px;height:1px;background:#C9A24A"></div>
-        <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">O que oferecemos</span>
-      </div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:12px">Serviços da Ninjas Barbershop</h2>
-      <p style="color:#B8B8B8;font-size:15px;max-width:480px">Do corte ao acabamento, tudo pensado para valorizar seu estilo.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;gap:16px">
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Corte%20Masculino%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Corte Masculino</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 50</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Corte personalizado para o seu estilo, finalizado com precisão.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Simples%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(45 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Barba Simples</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 30</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Modelagem e acabamento da barba com navalha e produtos premium.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(90 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Barba Terapia</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 35</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Tratamento completo com toalha quente, óleos e modelagem sofisticada.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(135 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cabelo + Barba</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 80</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">O combo completo: corte e barba no mesmo atendimento.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(180 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cabelo + Barba Terapia</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 85</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Corte completo com barba terapia para um resultado premium.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Pezinho%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(225 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Pezinho</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 25</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Acabamento preciso na nuca e na linha do cabelo.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20Sobrancelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(270 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Sobrancelha</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 15</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Design e alinhamento que valorizam o rosto.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cera%20de%20Nariz%20e%20Orelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="service-card" style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
-        <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(315 17 17)"><circle cx="10" cy="24" r="3.5"/><circle cx="24" cy="24" r="3.5"/><line x1="12" y1="21" x2="22" y2="8"/><line x1="22" y1="21" x2="12" y2="8"/><circle cx="17" cy="14.5" r="1" fill="#C9A24A"/><line x1="5" y1="4" x2="29" y2="4"/><line x1="9" y1="4" x2="9" y2="7"/><line x1="14" y1="4" x2="14" y2="7"/><line x1="19" y1="4" x2="19" y2="7"/><line x1="24" y1="4" x2="24" y2="7"/></g></svg></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px"><h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cera Nariz e Orelha</h3><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$ 15</span></div>
-        <p style="color:#666;font-size:13px;line-height:1.6">Remoção cuidadosa para um acabamento impecável.</p>
-        <div style="margin-top:auto;padding-top:20px"><div style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px"><span style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
-      </a>
-      <div style="flex:1 1 260px;visibility:hidden;pointer-events:none"></div>
-      <div style="flex:1 1 260px;visibility:hidden;pointer-events:none"></div>
-    </div>
-  </div>
-</section>
-
-<section style="position:relative;padding:60px 24px;overflow:hidden;background:#C9A24A">
-  <div style="position:relative;z-index:1;max-width:680px;margin:0 auto;text-align:center">
-    <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:20px">
-      <div style="width:60px;height:1px;background:#0B0B0B"></div>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="#0B0B0B"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      <div style="width:60px;height:1px;background:#0B0B0B"></div>
-    </div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);font-weight:900;color:#0B0B0B;margin-bottom:20px;line-height:1.15">Pronto para renovar o visual?</h2>
-    <p style="color:#1a1a1a;font-size:16px;line-height:1.7;margin-bottom:48px">Agende seu horário na Ninjas Barbershop e venha cuidar do seu corte, barba e estilo com quem entende do assunto.</p>
-    <button onclick="openModal()" id="cta-btn" style="display:inline-flex;align-items:center;gap:12px;background:#0B0B0B;color:#C9A24A;padding:20px 48px;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s">
-      <svg width="18" height="18" viewBox="0 0 448 512" fill="#C9A24A"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-      Chamar no WhatsApp
-    </button>
-    <p style="margin-top:24px;font-size:12px;color:#0B0B0B;letter-spacing:1px;opacity:0.8;font-weight:500">Tietê, SP · Segunda a Sábado</p>
-  </div>
-</section>
-
-<section id="diferenciais" style="background:#0B0B0B;padding:80px 24px;border-top:1px solid #1A1A1A;position:relative;overflow:hidden">
-  <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.35">
-    <source src="uploads/video_sala_esperar.mp4" type="video/mp4" />
-  </video>
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,0.2) 0%,rgba(11,11,11,0.6) 40%,rgba(11,11,11,1) 95%);z-index:0"></div>
-  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
-    <div style="margin-bottom:56px;max-width:560px">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
-        <div style="width:36px;height:1px;background:#C9A24A"></div>
-        <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Por que nos escolher</span>
-      </div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:16px">Por que escolher a Ninjas Barbershop?</h2>
-      <p style="color:#B8B8B8;font-size:15px;line-height:1.7">Na Ninjas Barbershop, cada detalhe importa: do corte ao atendimento, tudo é pensado para você sair com mais estilo e confiança.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:800px">
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Atendimento profissional</h3></div>
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Ambiente masculino</h3></div>
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Cortes e barba no detalhe</h3></div>
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Localização fácil</h3></div>
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Ambiente climatizado</h3></div>
-      <div style="height:52px;padding:0 24px;background:rgba(17,17,17,0.75);border:1px solid #1E1E1E;backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;text-align:center"><h3 style="font-size:clamp(12px,2.8vw,15px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Bebida inclusa</h3></div>
-    </div>
-  </div>
-</section>
-
-<section id="localizacao" style="background:#0E0E0E;padding:60px 24px;border-top:1px solid #1A1A1A">
-  <div style="max-width:600px;margin:0 auto">
-    <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
-      <div style="width:36px;height:1px;background:#C9A24A"></div>
-      <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Localização</span>
-    </div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:40px">Estamos em Tietê, SP</h2>
-    <div style="display:flex;flex-direction:column;gap:28px">
-      <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
-        <div>
-          <p style="color:#fff;font-size:15px;font-weight:500;margin-bottom:4px">Rua Lara Campos, 740 – Loja 4</p>
-          <p style="color:#666;font-size:13px">Tietê, SP</p>
-          <p style="color:#666;font-size:13px">Referência: Embaixo do Banco Sicoob</p>
+      <div class="trabalhos-grid">
+        <div class="photo-item" onclick="openLightbox(this)"
+          style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
+          <img src="uploads/cliente01.jpg" alt="Serviço Feito"
+            style="width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)"
+          style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
+          <img src="uploads/cliente02.jpg" alt="Serviço Feito"
+            style="width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)"
+          style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
+          <img src="uploads/cliente03.jpg" alt="Serviço Feito"
+            style="width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <div class="photo-item" onclick="openLightbox(this)"
+          style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
+          <img src="uploads/cliente04.jpg" alt="Serviço Feito"
+            style="width:100%;height:100%;object-fit:cover;display:block" />
         </div>
       </div>
-      <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div>
-          <p style="color:#fff;font-size:15px;font-weight:500;margin-bottom:8px">Horário de funcionamento</p>
-          <div style="display:flex;flex-direction:column;gap:6px">
-            <p style="color:#666;font-size:13px;margin:0">Segunda a Sexta: <span style="color:#B8B8B8;font-weight:500;margin-left:4px">09:00 – 20:00</span></p>
-            <p style="color:#666;font-size:13px;margin:0">Sábado: <span style="color:#B8B8B8;font-weight:500;margin-left:4px">08:00 – 18:00</span></p>
+    </div>
+    <div id="photo-lightbox" onclick="closeLightbox()"
+      style="position:fixed;inset:0;background:rgba(11,11,11,0.95);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;z-index:10000;cursor:zoom-out;opacity:0;transition:opacity 0.25s ease-out">
+      <button class="lightbox-close" onclick="event.stopPropagation();closeLightbox()"
+        style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;line-height:1;width:48px;height:48px;display:flex;align-items:center;justify-content:center;transition:color 0.2s">&times;</button>
+      <img id="lightbox-img" src="" alt="Ampliado"
+        style="max-width:90%;max-height:90%;object-fit:contain;border:1px solid #1E1E1E;box-shadow:0 10px 40px rgba(0,0,0,0.8);transform:scale(0.95);transition:transform 0.25s ease-out" />
+    </div>
+  </section>
+
+  <section id="servicos" style="background:#0B0B0B;padding:60px 24px 64px">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="margin-bottom:56px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+          <div style="width:36px;height:1px;background:#C9A24A"></div>
+          <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">O que
+            oferecemos</span>
+        </div>
+        <h2
+          style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:12px">
+          Serviços da Ninjas Barbershop</h2>
+        <p style="color:#B8B8B8;font-size:15px;max-width:480px">Do corte ao acabamento, tudo pensado para valorizar seu
+          estilo.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Corte%20Masculino%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10" cy="24" r="3.5" />
+              <circle cx="24" cy="24" r="3.5" />
+              <line x1="12" y1="21" x2="22" y2="8" />
+              <line x1="22" y1="21" x2="12" y2="8" />
+              <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+              <line x1="5" y1="4" x2="29" y2="4" />
+              <line x1="9" y1="4" x2="9" y2="7" />
+              <line x1="14" y1="4" x2="14" y2="7" />
+              <line x1="19" y1="4" x2="19" y2="7" />
+              <line x1="24" y1="4" x2="24" y2="7" />
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Corte Masculino
+            </h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              50</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Corte personalizado para o seu estilo, finalizado com
+            precisão.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Simples%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(45 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Barba Simples
+            </h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              30</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Modelagem e acabamento da barba com navalha e produtos
+            premium.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(90 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Barba Terapia
+            </h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              35</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Tratamento completo com toalha quente, óleos e modelagem
+            sofisticada.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(135 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cabelo + Barba
+            </h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              80</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">O combo completo: corte e barba no mesmo atendimento.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(180 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cabelo + Barba
+              Terapia</h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              85</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Corte completo com barba terapia para um resultado
+            premium.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Pezinho%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(225 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Pezinho</h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              25</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Acabamento preciso na nuca e na linha do cabelo.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20Sobrancelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(270 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Sobrancelha</h3>
+            <span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              15</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Design e alinhamento que valorizam o rosto.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cera%20de%20Nariz%20e%20Orelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+          target="_blank" rel="noopener" class="service-card"
+          style="flex:1 1 260px;background:#111;border:1px solid #1E1E1E;box-shadow:inset 0 1px 1px rgba(255,255,255,0.04);padding:36px 28px;display:flex;flex-direction:column;text-decoration:none;cursor:pointer">
+          <div style="margin-bottom:20px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#C9A24A"
+              stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(315 17 17)">
+                <circle cx="10" cy="24" r="3.5" />
+                <circle cx="24" cy="24" r="3.5" />
+                <line x1="12" y1="21" x2="22" y2="8" />
+                <line x1="22" y1="21" x2="12" y2="8" />
+                <circle cx="17" cy="14.5" r="1" fill="#C9A24A" />
+                <line x1="5" y1="4" x2="29" y2="4" />
+                <line x1="9" y1="4" x2="9" y2="7" />
+                <line x1="14" y1="4" x2="14" y2="7" />
+                <line x1="19" y1="4" x2="19" y2="7" />
+                <line x1="24" y1="4" x2="24" y2="7" />
+              </g>
+            </svg></div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px">
+            <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff">Cera Nariz e
+              Orelha</h3><span
+              style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif;white-space:nowrap">R$
+              15</span>
+          </div>
+          <p style="color:#666;font-size:13px;line-height:1.6">Remoção cuidadosa para um acabamento impecável.</p>
+          <div style="margin-top:auto;padding-top:20px">
+            <div
+              style="background:#1A1A1A;border:1px solid #2A2A2A;padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:8px">
+              <span
+                style="color:#C9A24A;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Agendar
+                agora</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A24A"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </a>
+        <div style="flex:1 1 260px;visibility:hidden;pointer-events:none"></div>
+        <div style="flex:1 1 260px;visibility:hidden;pointer-events:none"></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;padding:60px 24px;overflow:hidden;background:#C9A24A">
+    <div style="position:relative;z-index:1;max-width:680px;margin:0 auto;text-align:center">
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:20px">
+        <div style="width:60px;height:1px;background:#0B0B0B"></div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#0B0B0B">
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+        </svg>
+        <div style="width:60px;height:1px;background:#0B0B0B"></div>
+      </div>
+      <h2
+        style="font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);font-weight:900;color:#0B0B0B;margin-bottom:20px;line-height:1.15">
+        Pronto para renovar o visual?</h2>
+      <p style="color:#1a1a1a;font-size:16px;line-height:1.7;margin-bottom:48px">Agende seu horário na Ninjas Barbershop
+        e venha cuidar do seu corte, barba e estilo com quem entende do assunto.</p>
+      <button onclick="openModal()" id="cta-btn"
+        style="display:inline-flex;align-items:center;gap:12px;background:#0B0B0B;color:#C9A24A;padding:20px 48px;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s">
+        <svg width="18" height="18" viewBox="0 0 448 512" fill="#C9A24A">
+          <path
+            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+        Chamar no WhatsApp
+      </button>
+      <p style="margin-top:24px;font-size:12px;color:#0B0B0B;letter-spacing:1px;opacity:0.8;font-weight:500">Tietê, SP ·
+        Segunda a Sábado</p>
+    </div>
+  </section>
+
+  <section id="diferenciais"
+    style="background:#0B0B0B;padding:80px 24px;border-top:1px solid #1A1A1A;position:relative;overflow:hidden">
+    <video autoplay muted loop playsinline
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.55">
+      <source src="uploads/video_sala_esperar.mp4" type="video/mp4" />
+    </video>
+    <div
+      style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,0.15) 0%,rgba(11,11,11,0.45) 50%,rgba(11,11,11,0.85) 100%);z-index:0">
+    </div>
+    <div class="diferenciais-container" style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+      <div class="diferenciais-info" style="margin-bottom:56px;max-width:560px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+          <div style="width:36px;height:1px;background:#C9A24A"></div>
+          <span style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Por que
+            nos escolher</span>
+        </div>
+        <h2
+          style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:16px">
+          Por que escolher a Ninjas Barbershop?</h2>
+        <p style="color:#B8B8B8;font-size:15px;line-height:1.7">Na Ninjas Barbershop, cada detalhe importa: do corte ao
+          atendimento, tudo é pensado para você sair com mais estilo e confiança.</p>
+      </div>
+      <div class="diferenciais-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:800px">
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Atendimento profissional</h3>
+        </div>
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4 5 12h14l3-8-7 4-3-6-3 6-7-4z"/><path d="M5 20h14a2 2 0 0 0 2-2v-2H3v2a2 2 0 0 0 2 2z"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Ambiente masculino</h3>
+        </div>
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Cortes e barba no detalhe</h3>
+        </div>
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Localização fácil</h3>
+        </div>
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Ambiente climatizado</h3>
+        </div>
+        <div class="diferencial-card">
+          <svg class="diferencial-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+          <h3 style="font-size:clamp(11px,2.8vw,14px);font-weight:600;color:#fff;margin:0;white-space:nowrap">Bebida inclusa</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao" style="background:#0E0E0E;padding:60px 24px;border-top:1px solid #1A1A1A">
+    <div class="localizacao-container" style="max-width:600px;margin:0 auto">
+      <div class="localizacao-info">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+          <div style="width:36px;height:1px;background:#C9A24A"></div>
+          <span
+            style="color:#C9A24A;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:500">Localização</span>
+        </div>
+        <h2
+          style="font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:#fff;margin-bottom:40px">
+          Estamos em Tietê, SP</h2>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div
+              style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg></div>
+            <div>
+              <p style="color:#fff;font-size:15px;font-weight:500;margin-bottom:4px">Rua Lara Campos, 740 – Loja 4</p>
+              <p style="color:#666;font-size:13px">Tietê, SP</p>
+              <p style="color:#666;font-size:13px">Referência: Embaixo do Banco Sicoob</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div
+              style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.8"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <div>
+              <p style="color:#fff;font-size:15px;font-weight:500;margin-bottom:8px">Horário de funcionamento</p>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <p style="color:#666;font-size:13px;margin:0">Segunda a Sexta: <span
+                    style="color:#B8B8B8;font-weight:500;margin-left:4px">09:00 – 20:00</span></p>
+                <p style="color:#666;font-size:13px;margin:0">Sábado: <span
+                    style="color:#B8B8B8;font-weight:500;margin-left:4px">08:00 – 18:00</span></p>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div
+              style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg></div>
+            <div>
+              <p style="color:#666;font-size:13px;margin-bottom:2px">Instagram</p>
+              <a href="https://www.instagram.com/ninjasbarbershop" target="_blank" rel="noopener"
+                style="color:#C9A24A;font-size:14px;font-weight:500">@ninjasbarbershop</a>
+            </div>
           </div>
         </div>
       </div>
-      <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border:1px solid #2A2A2A;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      <div class="localizacao-map" style="border:1px solid #1E1E1E;border-radius:8px;overflow:hidden;background:#111;height:400px;position:relative">
+        <iframe 
+          src="https://maps.google.com/maps?q=Rua%20Lara%20Campos,%20740,%20Tiet%C3%AA,%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;filter:grayscale(1) invert(0.9) contrast(1.2);opacity:0.85;transition:opacity 0.3s;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          onmouseover="this.style.opacity='1'"
+          onmouseout="this.style.opacity='0.85'">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#060606;border-top:1px solid #1A1A1A;padding:32px 24px;text-align:center">
+    <div
+      style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
+      <img src="uploads/logo.png" alt="Ninja's Barbershop" style="height:30px;width:auto;display:block" />
+      <p style="color:#2A2A2A;font-size:11px;letter-spacing:0.5px">© 2026 Ninja's Barbershop · Todos os direitos
+        reservados</p>
+    </div>
+  </footer>
+
+  <div id="schedule-modal" onclick="closeModal()"
+    style="position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:24px">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.85)"></div>
+    <div id="modal-inner" onclick="event.stopPropagation()"
+      style="position:relative;z-index:1;background:#151515;border:1px solid #2A2A2A;width:100%;max-width:460px;max-height:85vh;overflow-y:auto">
+      <div
+        style="padding:22px 28px;border-bottom:1px solid #1E1E1E;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#151515;z-index:1">
         <div>
-          <p style="color:#666;font-size:13px;margin-bottom:2px">Instagram</p>
-          <a href="https://www.instagram.com/ninjasbarbershop" target="_blank" rel="noopener" style="color:#C9A24A;font-size:14px;font-weight:500">@ninjasbarbershop</a>
+          <p
+            style="color:#C9A24A;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:6px">
+            Agendamento</p>
+          <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Qual serviço
+            deseja?</h3>
         </div>
+        <button onclick="closeModal()"
+          style="background:none;border:1px solid #2A2A2A;color:#999;width:36px;height:36px;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">×</button>
       </div>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Corte%20Masculino%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Corte Masculino</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 50</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Simples%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Barba Simples</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 30</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Barba Terapia</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 35</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Cabelo + Barba</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 80</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Cabelo + Barba Terapia</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 85</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Pezinho%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Pezinho</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 25</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Sobrancelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Sobrancelha</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 15</span></a>
+      <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cera%20de%20Nariz%20e%20Orelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
+        target="_blank" rel="noopener" class="modal-item"
+        style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;text-decoration:none"><span
+          style="color:#fff;font-size:14px">Cera Nariz e Orelha</span><span
+          style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 15</span></a>
     </div>
   </div>
-</section>
 
-<footer style="background:#060606;border-top:1px solid #1A1A1A;padding:32px 24px;text-align:center">
-  <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
-    <img src="uploads/logo.png" alt="Ninja's Barbershop" style="height:30px;width:auto;display:block" />
-    <p style="color:#2A2A2A;font-size:11px;letter-spacing:0.5px">© 2026 Ninja's Barbershop · Todos os direitos reservados</p>
-  </div>
-</footer>
+  <button id="wa-float" onclick="openModal()" title="Agendar pelo WhatsApp"
+    style="position:fixed;bottom:28px;right:28px;z-index:999;background:#C9A24A;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(201,162,74,0.4);animation:waPulse 2.5s infinite;border:none;cursor:pointer">
+    <svg width="28" height="28" viewBox="0 0 448 512" fill="#0B0B0B">
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
+  </button>
 
-<div id="schedule-modal" onclick="closeModal()" style="position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:24px">
-  <div style="position:absolute;inset:0;background:rgba(0,0,0,0.85)"></div>
-  <div onclick="event.stopPropagation()" style="position:relative;z-index:1;background:#151515;border:1px solid #2A2A2A;width:100%;max-width:460px;max-height:85vh;overflow-y:auto">
-    <div style="padding:22px 28px;border-bottom:1px solid #1E1E1E;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#151515;z-index:1">
-      <div>
-        <p style="color:#C9A24A;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:6px">Agendamento</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Qual serviço deseja?</h3>
-      </div>
-      <button onclick="closeModal()" style="background:none;border:1px solid #2A2A2A;color:#999;width:36px;height:36px;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">×</button>
-    </div>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Corte%20Masculino%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Corte Masculino</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 50</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Simples%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Barba Simples</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 30</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Barba Terapia</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 35</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Cabelo + Barba</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 80</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cabelo%20%2B%20Barba%20Terapia%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Cabelo + Barba Terapia</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 85</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Pezinho%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Pezinho</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 25</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Sobrancelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid #1A1A1A;text-decoration:none"><span style="color:#fff;font-size:14px">Sobrancelha</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 15</span></a>
-    <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Cera%20de%20Nariz%20e%20Orelha%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F" target="_blank" rel="noopener" class="modal-item" style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px;text-decoration:none"><span style="color:#fff;font-size:14px">Cera Nariz e Orelha</span><span style="color:#C9A24A;font-size:18px;font-weight:700;font-family:'Playfair Display',serif">R$ 15</span></a>
-  </div>
-</div>
+  <script>
+    document.addEventListener('click', function(event) {
+      var anchor = event.target.closest('a[href^="#"]');
+      if (!anchor) return;
+      var href = anchor.getAttribute('href');
+      if (!href || href === '#') return;
+      var target = document.querySelector(href);
+      if (!target) return;
+      event.preventDefault();
+      var nav = document.querySelector('nav');
+      var navHeight = nav ? nav.offsetHeight : 0;
+      var targetY = target.getBoundingClientRect().top + document.documentElement.scrollTop - navHeight;
+      history.replaceState(null, '', href);
+      var startY = document.documentElement.scrollTop;
+      var diff = targetY - startY;
+      if (Math.abs(diff) < 1) return;
+      var duration = Math.max(400, Math.min(Math.abs(diff) * 0.35, 750));
+      var startTime = null;
+      function ease(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
+      function step(now) {
+        if (!startTime) startTime = now;
+        var t = Math.min((now - startTime) / duration, 1);
+        document.documentElement.scrollTop = startY + diff * ease(t);
+        if (t < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
 
-<button id="wa-float" onclick="openModal()" title="Agendar pelo WhatsApp" style="position:fixed;bottom:28px;right:28px;z-index:999;background:#C9A24A;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(201,162,74,0.4);animation:waPulse 2.5s infinite;border:none;cursor:pointer">
-  <svg width="28" height="28" viewBox="0 0 448 512" fill="#0B0B0B"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-</button>
+    function toggleMenu() { var m = document.getElementById('mobile-menu'); m.style.display = m.style.display === 'flex' ? 'none' : 'flex'; }
+    function closeMenu() { document.getElementById('mobile-menu').style.display = 'none'; }
+    document.addEventListener('click', function(e) {
+      var menu = document.getElementById('mobile-menu');
+      var btn = document.getElementById('hamburger-btn');
+      if (menu.style.display === 'flex' && !menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+    });
+    function openModal() { document.getElementById('schedule-modal').style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+    function closeModal() { document.getElementById('schedule-modal').style.display = 'none'; document.body.style.overflow = ''; }
+    function openLightbox(el) { var img = el.querySelector('img'); var lb = document.getElementById('photo-lightbox'); var lbImg = document.getElementById('lightbox-img'); lbImg.src = img.src; lb.style.display = 'flex'; lb.offsetHeight; lb.style.opacity = '1'; lbImg.style.transform = 'scale(1)'; }
+    function closeLightbox() { var lb = document.getElementById('photo-lightbox'); var lbImg = document.getElementById('lightbox-img'); lb.style.opacity = '0'; lbImg.style.transform = 'scale(0.95)'; setTimeout(function () { lb.style.display = 'none'; lbImg.src = ''; }, 250); }
+    window.addEventListener('scroll', function () { var wa = document.getElementById('wa-float'); if (window.scrollY > window.innerHeight * 0.85) wa.classList.add('visible'); else wa.classList.remove('visible'); }, { passive: true });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeModal(); closeLightbox(); } });
 
-<script>
-function toggleMenu(){var m=document.getElementById('mobile-menu');m.style.display=m.style.display==='flex'?'none':'flex';}
-function closeMenu(){document.getElementById('mobile-menu').style.display='none';}
-function openModal(){document.getElementById('schedule-modal').style.display='flex';document.body.style.overflow='hidden';}
-function closeModal(){document.getElementById('schedule-modal').style.display='none';document.body.style.overflow='';}
-function openLightbox(el){var img=el.querySelector('img');var lb=document.getElementById('photo-lightbox');var lbImg=document.getElementById('lightbox-img');lbImg.src=img.src;lb.style.display='flex';lb.offsetHeight;lb.style.opacity='1';lbImg.style.transform='scale(1)';}
-function closeLightbox(){var lb=document.getElementById('photo-lightbox');var lbImg=document.getElementById('lightbox-img');lb.style.opacity='0';lbImg.style.transform='scale(0.95)';setTimeout(function(){lb.style.display='none';lbImg.src='';},250);}
-window.addEventListener('scroll',function(){var wa=document.getElementById('wa-float');if(window.scrollY>window.innerHeight*0.85)wa.classList.add('visible');else wa.classList.remove('visible');},{passive:true});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal();closeLightbox();}});
-</script>
+    function alignHeights() {
+      if (window.innerWidth >= 992) {
+        var s = document.getElementById('servicos');
+        var d = document.getElementById('diferenciais');
+        if (s && d) {
+          d.style.minHeight = s.offsetHeight + 'px';
+        }
+      } else {
+        var d = document.getElementById('diferenciais');
+        if (d) d.style.minHeight = '';
+      }
+    }
+    window.addEventListener('load', alignHeights);
+    window.addEventListener('resize', alignHeights);
+    document.addEventListener('DOMContentLoaded', alignHeights);
+
+    // Auto-scroll para gravação: botão direito (desktop) ou long press 600ms (mobile)
+    (function () {
+      var rafId = null;
+      var scrolling = false;
+      var SPEED = 320; // px/s — suba para rolar mais rápido
+
+      function stopScroll() {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = null;
+        scrolling = false;
+      }
+
+      function startScroll() {
+        if (scrolling) { stopScroll(); return; }
+        scrolling = true;
+        var last = null;
+
+        function step(now) {
+          if (!scrolling) return;
+          if (last !== null) {
+            var dt = (now - last) / 1000;
+            var maxY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var newY = Math.min(document.documentElement.scrollTop + SPEED * dt, maxY);
+            document.documentElement.scrollTop = newY;
+            if (newY >= maxY) { scrolling = false; rafId = null; return; }
+          }
+          last = now;
+          rafId = requestAnimationFrame(step);
+        }
+        rafId = requestAnimationFrame(step);
+      }
+
+      // Desktop: botão direito inicia/para
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        startScroll();
+      });
+
+      // Mobile: long press (600ms) inicia; toque curto para
+      var touchTimer = null;
+      document.addEventListener('touchstart', function () {
+        touchTimer = setTimeout(function () { touchTimer = null; startScroll(); }, 600);
+      }, { passive: true });
+      document.addEventListener('touchend', function () {
+        if (touchTimer) { clearTimeout(touchTimer); touchTimer = null; }
+        else if (scrolling) stopScroll();
+      }, { passive: true });
+      document.addEventListener('touchmove', function () {
+        if (touchTimer) { clearTimeout(touchTimer); touchTimer = null; }
+      }, { passive: true });
+
+      // Escape também para
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') stopScroll(); });
+    })();
+  </script>
 </body>
+
 </html>
