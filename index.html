@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://ninjasbarbershop.vercel.app/">
   <title>Ninja's Barbershop | Barbearia Premium em Tietê SP</title>
   <meta name="description"
     content="Ninja's Barbershop - Barbearia premium em Tietê, SP. Cortes clássicos e modernos, barba e atendimento exclusivo embaixo do Banco Sicoob. Agende agora!" />
@@ -20,10 +22,70 @@
   <meta name="twitter:description"
     content="Cortes de cabelo masculinos, barba e acabamento com atendimento de excelência. Agende seu horário pelo WhatsApp." />
   <meta name="twitter:image" content="https://ninjasbarbershop.vercel.app/uploads/og.png" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C9A24A'>✂</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" as="image" href="/uploads/video_hero_poster.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+  </noscript>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "@id": "https://ninjasbarbershop.vercel.app/#business",
+      "name": "Ninja's Barbershop",
+      "description": "Barbearia em Tietê, SP, especializada em cortes masculinos, barba, acabamento e tratamentos de barba com atendimento personalizado.",
+      "url": "https://ninjasbarbershop.vercel.app/",
+      "logo": "https://ninjasbarbershop.vercel.app/uploads/logo.png",
+      "image": "https://ninjasbarbershop.vercel.app/uploads/og.png",
+      "telephone": "+55 15 98826-2795",
+      "priceRange": "R$ 15 a R$ 85",
+      "currenciesAccepted": "BRL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Lara Campos, 740 - Loja 4",
+        "addressLocality": "Tietê",
+        "addressRegion": "SP",
+        "postalCode": "18530-037",
+        "addressCountry": "BR"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua%20Lara%20Campos%2C%20740%20-%20Loja%204%2C%20Tiet%C3%AA%20-%20SP%2C%2018530-037",
+      "areaServed": {
+        "@type": "City",
+        "name": "Tietê"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/ninjasbarbershop"
+      ]
+    }
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -361,17 +423,67 @@
     .localizacao-map:hover iframe {
       pointer-events: auto
     }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 20000;
+      padding: 12px 16px;
+      background: #C9A24A;
+      color: #0B0B0B;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transform: translateY(-150%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    :where(a, button, [tabindex]):focus-visible {
+      outline: 3px solid #C9A24A;
+      outline-offset: 4px;
+    }
+
+    .photo-item {
+      appearance: none;
+      padding: 0;
+      background: transparent;
+      text-align: inherit;
+    }
+
+    [style*="color:#666"] {
+      color: #A3A3A3 !important;
+    }
+
+    footer [style*="color:#2A2A2A"] {
+      color: #8F8F8F !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
-  <nav
+  <nav aria-label="Navegação principal"
     style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(11,11,11,0.97);border-bottom:1px solid #1E1E1E">
     <div
       style="max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px;position:relative">
-      <a href="#hero" style="display:flex;align-items:center"><img src="uploads/logo.png" alt="Ninja's Barbershop"
-          style="height:30px;width:auto;display:block" /></a>
+      <a href="#hero" aria-label="Ninja's Barbershop — início" style="display:flex;align-items:center"><img src="uploads/logo-180.png" alt="Ninja's Barbershop"
+          width="90" height="30" fetchpriority="high" style="height:30px;width:auto;display:block" /></a>
       <div id="nav-desktop-links" style="gap:36px;align-items:center">
         <a href="#servicos" class="nav-link"
           style="display:inline-flex;align-items:center;gap:8px;color:#B8B8B8;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500">
@@ -390,11 +502,12 @@
         </a>
       </div>
       <div style="display:flex;align-items:center;gap:14px">
-        <button onclick="openModal()" class="nav-cta-btn btn-active-tactile">
+        <button type="button" onclick="openModal()" class="nav-cta-btn btn-active-tactile">
           <svg width="14" height="14" viewBox="0 0 448 512" fill="#0B0B0B"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
           Agendar
         </button>
-        <button id="hamburger-btn" onclick="toggleMenu()"
+        <button id="hamburger-btn" type="button" onclick="toggleMenu()" aria-label="Abrir menu"
+          aria-controls="mobile-menu" aria-expanded="false"
           style="flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;margin-right:-6px">
           <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
           <span style="display:block;width:22px;height:1.5px;background:#fff"></span>
@@ -402,7 +515,7 @@
         </button>
       </div>
     </div>
-    <div id="mobile-menu"
+    <div id="mobile-menu" aria-hidden="true"
       style="display:none;flex-direction:column;background:#0B0B0B;border-top:1px solid #1E1E1E;padding:8px 32px 24px">
       <a href="#servicos" onclick="closeMenu()" class="mobile-link"
         style="display:flex;align-items:center;gap:10px;color:#B8B8B8;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:16px 0;border-bottom:1px solid #1A1A1A">
@@ -422,11 +535,12 @@
     </div>
   </nav>
 
+  <main id="main-content" tabindex="-1">
+
   <section id="hero"
-    style="position:relative;width:100%;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0B0B0B url('uploads/parede_recepcao.jpg') center/cover no-repeat">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="uploads/video_hero.mp4" type="video/mp4" />
-    </video>
+    style="position:relative;width:100%;height:100svh;min-height:640px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0B0B0B url('uploads/video_hero_poster.jpg') center/cover no-repeat">
+    <video autoplay muted loop playsinline preload="none" poster="uploads/video_hero_poster.jpg"
+      data-src="uploads/video_hero_optimized.mp4" class="hero-video decorative-video" aria-hidden="true"></video>
     <div
       style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(11,11,11,0.2) 0%,rgba(11,11,11,0.6) 40%,rgba(11,11,11,1) 95%)">
     </div>
@@ -439,7 +553,7 @@
         style="font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,0.75);margin-bottom:44px;font-weight:300;letter-spacing:0.3px">
         Cortes masculinos, barba e acabamento com atendimento profissional na Ninjas Barbershop.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px">
-        <button onclick="openModal()" class="btn-active-tactile"
+        <button type="button" onclick="openModal()" class="btn-active-tactile"
           style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#C9A24A;color:#0B0B0B;padding:16px 24px;font-size:13px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;border:none;cursor:pointer;flex:1 1 200px;max-width:300px;transition:background 0.2s">
           <svg width="18" height="18" viewBox="0 0 448 512" fill="#0B0B0B">
             <path
@@ -484,33 +598,55 @@
           satisfação de nossos clientes. Clique para ampliar.</p>
       </div>
       <div class="trabalhos-grid">
-        <div class="photo-item" onclick="openLightbox(this)"
+        <button type="button" class="photo-item" onclick="openLightbox(this)"
+          aria-label="Ampliar foto de corte masculino"
           style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-          <img src="uploads/cliente01.jpg" alt="Serviço Feito"
+          <img src="uploads/cliente01-320.jpg"
+            srcset="uploads/cliente01-320.jpg 320w, uploads/cliente01-480.jpg 480w, uploads/cliente01-960.jpg 960w"
+            sizes="(min-width: 992px) 285px, calc(50vw - 34px)" data-full="uploads/cliente01-960.jpg"
+            width="480" height="480" loading="lazy" decoding="async"
+            alt="Corte masculino realizado na Ninja's Barbershop em Tietê"
             style="width:100%;height:100%;object-fit:cover;display:block" />
-        </div>
-        <div class="photo-item" onclick="openLightbox(this)"
+        </button>
+        <button type="button" class="photo-item" onclick="openLightbox(this)"
+          aria-label="Ampliar foto de acabamento de barba"
           style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-          <img src="uploads/cliente02.jpg" alt="Serviço Feito"
+          <img src="uploads/cliente02-320.jpg"
+            srcset="uploads/cliente02-320.jpg 320w, uploads/cliente02-480.jpg 480w, uploads/cliente02-960.jpg 960w"
+            sizes="(min-width: 992px) 285px, calc(50vw - 34px)" data-full="uploads/cliente02-960.jpg"
+            width="480" height="480" loading="lazy" decoding="async"
+            alt="Acabamento de barba feito na Ninja's Barbershop em Tietê"
             style="width:100%;height:100%;object-fit:cover;display:block" />
-        </div>
-        <div class="photo-item" onclick="openLightbox(this)"
+        </button>
+        <button type="button" class="photo-item" onclick="openLightbox(this)"
+          aria-label="Ampliar foto de corte e barba"
           style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-          <img src="uploads/cliente03.jpg" alt="Serviço Feito"
+          <img src="uploads/cliente03-320.jpg"
+            srcset="uploads/cliente03-320.jpg 320w, uploads/cliente03-480.jpg 480w, uploads/cliente03-960.jpg 960w"
+            sizes="(min-width: 992px) 285px, calc(50vw - 34px)" data-full="uploads/cliente03-960.jpg"
+            width="480" height="480" loading="lazy" decoding="async"
+            alt="Resultado de corte e barba na Ninja's Barbershop em Tietê"
             style="width:100%;height:100%;object-fit:cover;display:block" />
-        </div>
-        <div class="photo-item" onclick="openLightbox(this)"
+        </button>
+        <button type="button" class="photo-item" onclick="openLightbox(this)"
+          aria-label="Ampliar foto do resultado de um atendimento"
           style="position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid #1E1E1E;cursor:zoom-in">
-          <img src="uploads/cliente04.jpg" alt="Serviço Feito"
+          <img src="uploads/cliente04-320.jpg"
+            srcset="uploads/cliente04-320.jpg 320w, uploads/cliente04-480.jpg 480w, uploads/cliente04-960.jpg 960w"
+            sizes="(min-width: 992px) 285px, calc(50vw - 34px)" data-full="uploads/cliente04-960.jpg"
+            width="480" height="480" loading="lazy" decoding="async"
+            alt="Cliente após atendimento na Ninja's Barbershop em Tietê"
             style="width:100%;height:100%;object-fit:cover;display:block" />
-        </div>
+        </button>
       </div>
     </div>
-    <div id="photo-lightbox" onclick="closeLightbox()"
+    <div id="photo-lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada do portfólio"
+      aria-hidden="true" onclick="closeLightbox()"
       style="position:fixed;inset:0;background:rgba(11,11,11,0.95);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;z-index:10000;cursor:zoom-out;opacity:0;transition:opacity 0.25s ease-out">
-      <button class="lightbox-close" onclick="event.stopPropagation();closeLightbox()"
+      <button type="button" class="lightbox-close" aria-label="Fechar imagem ampliada"
+        onclick="event.stopPropagation();closeLightbox()"
         style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;line-height:1;width:48px;height:48px;display:flex;align-items:center;justify-content:center;transition:color 0.2s">&times;</button>
-      <img id="lightbox-img" src="" alt="Ampliado"
+      <img id="lightbox-img" width="960" height="960" alt="Imagem ampliada do serviço realizado"
         style="max-width:90%;max-height:90%;object-fit:contain;border:1px solid #1E1E1E;box-shadow:0 10px 40px rgba(0,0,0,0.8);transform:scale(0.95);transition:transform 0.25s ease-out" />
     </div>
   </section>
@@ -848,7 +984,7 @@
         Pronto para renovar o visual?</h2>
       <p style="color:#1a1a1a;font-size:16px;line-height:1.7;margin-bottom:48px">Agende seu horário na Ninjas Barbershop
         e venha cuidar do seu corte, barba e estilo com quem entende do assunto.</p>
-      <button onclick="openModal()" id="cta-btn"
+      <button type="button" onclick="openModal()" id="cta-btn"
         style="display:inline-flex;align-items:center;gap:12px;background:#0B0B0B;color:#C9A24A;padding:20px 48px;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s">
         <svg width="18" height="18" viewBox="0 0 448 512" fill="#C9A24A">
           <path
@@ -863,10 +999,9 @@
 
   <section id="diferenciais"
     style="background:#0B0B0B;padding:80px 24px;border-top:1px solid #1A1A1A;position:relative;overflow:hidden">
-    <video autoplay muted loop playsinline
-      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.55">
-      <source src="uploads/video_sala_esperar.mp4" type="video/mp4" />
-    </video>
+    <video autoplay muted loop playsinline preload="none" poster="uploads/video_sala_esperar_poster.jpg"
+      data-src="uploads/video_sala_esperar_optimized.mp4" class="ambient-video decorative-video" aria-hidden="true"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.55"></video>
     <div
       style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,0.15) 0%,rgba(11,11,11,0.45) 50%,rgba(11,11,11,0.85) 100%);z-index:0">
     </div>
@@ -933,8 +1068,15 @@
               </svg></div>
             <div>
               <p style="color:#fff;font-size:15px;font-weight:500;margin-bottom:4px">Rua Lara Campos, 740 – Loja 4</p>
-              <p style="color:#666;font-size:13px">Tietê, SP</p>
-              <p style="color:#666;font-size:13px">Referência: Embaixo do Banco Sicoob</p>
+              <p style="color:#666;font-size:13px">Centro · Tietê, SP · CEP 18530-037</p>
+              <p style="color:#666;font-size:13px">Referência: embaixo do Sicoob, com acesso pela Rua Antônio Nery</p>
+              <div style="display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px">
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Lara%20Campos%2C%20740%20-%20Loja%204%2C%20Tiet%C3%AA%20-%20SP%2C%2018530-037"
+                  target="_blank" rel="noopener"
+                  style="color:#C9A24A;font-size:13px;font-weight:500;text-decoration:underline;text-underline-offset:3px">Abrir rota no Google Maps</a>
+                <a href="https://wa.me/5515988262795" target="_blank" rel="noopener"
+                  style="color:#C9A24A;font-size:13px;font-weight:500;text-decoration:underline;text-underline-offset:3px">WhatsApp: (15) 98826-2795</a>
+              </div>
             </div>
           </div>
           <div style="display:flex;gap:16px;align-items:flex-start">
@@ -971,10 +1113,11 @@
         </div>
       </div>
       <div class="localizacao-map" style="border:1px solid #1E1E1E;border-radius:8px;overflow:hidden;background:#111;height:400px;position:relative">
-        <iframe 
-          src="https://maps.google.com/maps?q=Rua%20Lara%20Campos,%20740,%20Tiet%C3%AA,%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+        <iframe
+          data-src="https://maps.google.com/maps?q=Rua%20Lara%20Campos,%20740,%20Loja%204,%20Tiet%C3%AA,%20SP,%2018530-037&t=&z=16&ie=UTF8&iwloc=&output=embed"
           width="100%" 
           height="100%" 
+          title="Mapa da Ninja's Barbershop em Tietê"
           style="border:0;filter:grayscale(1) invert(0.9) contrast(1.2);opacity:0.85;transition:opacity 0.3s;" 
           allowfullscreen="" 
           loading="lazy" 
@@ -986,16 +1129,20 @@
     </div>
   </section>
 
+  </main>
+
   <footer style="background:#060606;border-top:1px solid #1A1A1A;padding:32px 24px;text-align:center">
     <div
       style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
-      <img src="uploads/logo.png" alt="Ninja's Barbershop" style="height:30px;width:auto;display:block" />
+      <img src="uploads/logo-180.png" alt="Ninja's Barbershop" width="90" height="30" loading="lazy" decoding="async"
+        style="height:30px;width:auto;display:block" />
       <p style="color:#2A2A2A;font-size:11px;letter-spacing:0.5px">© 2026 Ninja's Barbershop · Todos os direitos
         reservados</p>
     </div>
   </footer>
 
-  <div id="schedule-modal" onclick="closeModal()"
+  <div id="schedule-modal" role="dialog" aria-modal="true" aria-labelledby="schedule-modal-title"
+    aria-hidden="true" onclick="closeModal()"
     style="position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:24px">
     <div style="position:absolute;inset:0;background:rgba(0,0,0,0.85)"></div>
     <div id="modal-inner" onclick="event.stopPropagation()"
@@ -1006,10 +1153,10 @@
           <p
             style="color:#C9A24A;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:6px">
             Agendamento</p>
-          <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Qual serviço
+          <h3 id="schedule-modal-title" style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Qual serviço
             deseja?</h3>
         </div>
-        <button onclick="closeModal()"
+        <button type="button" aria-label="Fechar opções de agendamento" onclick="closeModal()"
           style="background:none;border:1px solid #2A2A2A;color:#999;width:36px;height:36px;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">×</button>
       </div>
       <a href="https://wa.me/5515988262795?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Corte%20Masculino%20na%20Ninjas%20Barbershop.%20Qual%20a%20disponibilidade%3F"
@@ -1055,7 +1202,8 @@
     </div>
   </div>
 
-  <button id="wa-float" onclick="openModal()" title="Agendar pelo WhatsApp"
+  <button id="wa-float" type="button" onclick="openModal()" aria-label="Agendar pelo WhatsApp"
+    title="Agendar pelo WhatsApp"
     style="position:fixed;bottom:28px;right:28px;z-index:999;background:#C9A24A;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(201,162,74,0.4);animation:waPulse 2.5s infinite;border:none;cursor:pointer">
     <svg width="28" height="28" viewBox="0 0 448 512" fill="#0B0B0B">
       <path
@@ -1064,9 +1212,74 @@
   </button>
 
   <script>
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function loadDeferredMedia(element) {
+      var source = element.getAttribute('data-src');
+      if (!source) return;
+      element.removeAttribute('data-src');
+      element.src = source;
+      if (element.tagName === 'VIDEO') {
+        element.load();
+        var playback = element.play();
+        if (playback && typeof playback.catch === 'function') playback.catch(function () {});
+      }
+    }
+
+    var heroVideo = document.querySelector('.hero-video[data-src]');
+    if (heroVideo) loadDeferredMedia(heroVideo);
+
+    var deferredMedia = Array.prototype.slice.call(document.querySelectorAll('.ambient-video[data-src], iframe[data-src]'));
+    if ('IntersectionObserver' in window) {
+      var mediaObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadDeferredMedia(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '400px 0px' });
+      deferredMedia.forEach(function (element) { mediaObserver.observe(element); });
+    } else {
+      deferredMedia.forEach(loadDeferredMedia);
+    }
+
+    var sectionScrollFrame = null;
+
+    function smoothScrollTo(targetY) {
+      var scrollRoot = document.scrollingElement || document.documentElement;
+      var startY = scrollRoot.scrollTop;
+      var distance = Math.max(0, targetY) - startY;
+      if (Math.abs(distance) < 1) return;
+
+      if (sectionScrollFrame) cancelAnimationFrame(sectionScrollFrame);
+      var duration = Math.max(500, Math.min(Math.abs(distance) * 0.45, 950));
+      var startedAt = null;
+      var previousScrollBehavior = scrollRoot.style.scrollBehavior;
+      scrollRoot.style.scrollBehavior = 'auto';
+
+      function animateScroll(now) {
+        if (startedAt === null) startedAt = now;
+        var progress = Math.min((now - startedAt) / duration, 1);
+        var eased = progress < 0.5
+          ? 4 * progress * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+        scrollRoot.scrollTop = startY + distance * eased;
+
+        if (progress < 1) {
+          sectionScrollFrame = requestAnimationFrame(animateScroll);
+        } else {
+          sectionScrollFrame = null;
+          scrollRoot.style.scrollBehavior = previousScrollBehavior;
+        }
+      }
+
+      sectionScrollFrame = requestAnimationFrame(animateScroll);
+    }
+
     document.addEventListener('click', function(event) {
       var anchor = event.target.closest('a[href^="#"]');
       if (!anchor) return;
+      if (anchor.classList.contains('skip-link')) return;
       var href = anchor.getAttribute('href');
       if (!href || href === '#') return;
       var target = document.querySelector(href);
@@ -1074,36 +1287,129 @@
       event.preventDefault();
       var nav = document.querySelector('nav');
       var navHeight = nav ? nav.offsetHeight : 0;
-      var targetY = target.getBoundingClientRect().top + document.documentElement.scrollTop - navHeight;
-      history.replaceState(null, '', href);
-      var startY = document.documentElement.scrollTop;
-      var diff = targetY - startY;
-      if (Math.abs(diff) < 1) return;
-      var duration = Math.max(400, Math.min(Math.abs(diff) * 0.35, 750));
-      var startTime = null;
-      function ease(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
-      function step(now) {
-        if (!startTime) startTime = now;
-        var t = Math.min((now - startTime) / duration, 1);
-        document.documentElement.scrollTop = startY + diff * ease(t);
-        if (t < 1) requestAnimationFrame(step);
+      var targetY = target.getBoundingClientRect().top + window.scrollY - navHeight;
+      smoothScrollTo(targetY);
+      try {
+        history.replaceState(null, '', href);
+      } catch (error) {
+        // Arquivos abertos via file:// podem bloquear a alteraÃ§Ã£o do histÃ³rico.
       }
-      requestAnimationFrame(step);
     });
 
-    function toggleMenu() { var m = document.getElementById('mobile-menu'); m.style.display = m.style.display === 'flex' ? 'none' : 'flex'; }
-    function closeMenu() { document.getElementById('mobile-menu').style.display = 'none'; }
+    var activeDialog = null;
+    var previouslyFocusedElement = null;
+
+    function setMenuState(isOpen) {
+      var menu = document.getElementById('mobile-menu');
+      var button = document.getElementById('hamburger-btn');
+      menu.style.display = isOpen ? 'flex' : 'none';
+      menu.setAttribute('aria-hidden', String(!isOpen));
+      button.setAttribute('aria-expanded', String(isOpen));
+      button.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    }
+
+    function toggleMenu() {
+      var button = document.getElementById('hamburger-btn');
+      setMenuState(button.getAttribute('aria-expanded') !== 'true');
+    }
+
+    function closeMenu(returnFocus) {
+      setMenuState(false);
+      if (returnFocus) document.getElementById('hamburger-btn').focus();
+    }
+
     document.addEventListener('click', function(e) {
       var menu = document.getElementById('mobile-menu');
       var btn = document.getElementById('hamburger-btn');
       if (menu.style.display === 'flex' && !menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
     });
-    function openModal() { document.getElementById('schedule-modal').style.display = 'flex'; document.body.style.overflow = 'hidden'; }
-    function closeModal() { document.getElementById('schedule-modal').style.display = 'none'; document.body.style.overflow = ''; }
-    function openLightbox(el) { var img = el.querySelector('img'); var lb = document.getElementById('photo-lightbox'); var lbImg = document.getElementById('lightbox-img'); lbImg.src = img.src; lb.style.display = 'flex'; lb.offsetHeight; lb.style.opacity = '1'; lbImg.style.transform = 'scale(1)'; }
-    function closeLightbox() { var lb = document.getElementById('photo-lightbox'); var lbImg = document.getElementById('lightbox-img'); lb.style.opacity = '0'; lbImg.style.transform = 'scale(0.95)'; setTimeout(function () { lb.style.display = 'none'; lbImg.src = ''; }, 250); }
+
+    function getFocusableElements(container) {
+      return Array.prototype.slice.call(container.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter(function (element) { return element.getClientRects().length > 0; });
+    }
+
+    function activateDialog(dialog, initialFocus) {
+      previouslyFocusedElement = document.activeElement;
+      activeDialog = dialog;
+      dialog.setAttribute('aria-hidden', 'false');
+      dialog.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      window.requestAnimationFrame(function () {
+        var target = initialFocus || getFocusableElements(dialog)[0];
+        if (target) target.focus();
+      });
+    }
+
+    function deactivateDialog(dialog) {
+      if (!dialog || dialog.getAttribute('aria-hidden') === 'true') return;
+      dialog.setAttribute('aria-hidden', 'true');
+      dialog.style.display = 'none';
+      document.body.style.overflow = '';
+      activeDialog = null;
+      if (previouslyFocusedElement && document.contains(previouslyFocusedElement)) previouslyFocusedElement.focus();
+      previouslyFocusedElement = null;
+    }
+
+    function openModal() {
+      var modal = document.getElementById('schedule-modal');
+      activateDialog(modal, modal.querySelector('button[aria-label^="Fechar"]'));
+    }
+
+    function closeModal() {
+      deactivateDialog(document.getElementById('schedule-modal'));
+    }
+
+    function openLightbox(element) {
+      var image = element.querySelector('img');
+      var lightbox = document.getElementById('photo-lightbox');
+      var lightboxImage = document.getElementById('lightbox-img');
+      lightboxImage.src = image.getAttribute('data-full') || image.currentSrc || image.src;
+      lightboxImage.alt = image.alt;
+      lightbox.style.opacity = '0';
+      activateDialog(lightbox, lightbox.querySelector('.lightbox-close'));
+      lightbox.offsetHeight;
+      lightbox.style.opacity = '1';
+      lightboxImage.style.transform = 'scale(1)';
+    }
+
+    function closeLightbox() {
+      var lightbox = document.getElementById('photo-lightbox');
+      if (lightbox.getAttribute('aria-hidden') === 'true') return;
+      var lightboxImage = document.getElementById('lightbox-img');
+      var focusTarget = previouslyFocusedElement;
+      lightbox.style.opacity = '0';
+      lightboxImage.style.transform = 'scale(0.95)';
+      window.setTimeout(function () {
+        lightboxImage.removeAttribute('src');
+        deactivateDialog(lightbox);
+        if (focusTarget && document.contains(focusTarget)) focusTarget.focus();
+      }, prefersReducedMotion ? 0 : 250);
+    }
+
     window.addEventListener('scroll', function () { var wa = document.getElementById('wa-float'); if (window.scrollY > window.innerHeight * 0.85) wa.classList.add('visible'); else wa.classList.remove('visible'); }, { passive: true });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeModal(); closeLightbox(); } });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        if (activeDialog === document.getElementById('schedule-modal')) closeModal();
+        else if (activeDialog === document.getElementById('photo-lightbox')) closeLightbox();
+        else if (document.getElementById('hamburger-btn').getAttribute('aria-expanded') === 'true') closeMenu(true);
+        return;
+      }
+
+      if (event.key !== 'Tab' || !activeDialog) return;
+      var focusable = getFocusableElements(activeDialog);
+      if (!focusable.length) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
 
     function alignHeights() {
       if (window.innerWidth >= 992) {
